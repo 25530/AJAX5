@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body style="background-color:gray">
+
+    <p><img src="http://ma-web.nl/static/vector/Logo_blok.svg" width="30">Ajax 5 2019 Door Sam Harwig</p>
+    <input type="text" id="searchCountry" placeholder="Zoek een land">
+    <br>
+    <div id="txtHint">Hier staat de lijst</div>
+    <script>
+      searchCountry = document.getElementById('searchCountry');
+      searchCountry.addEventListener('keyup', function(){
+        showList(searchCountry.value,'list');
+      });
+
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
